@@ -53,14 +53,14 @@
 									<!--end::Svg Icon-->
 								</div>
 							</div>
-							<!--end::Heaeder menu toggle-->
-							<!--begin::Header Logo-->
-							<div class="header-logo me-5 me-md-10 flex-grow-1 flex-lg-grow-0">
-								<a href="../dist/index.html">
-									Logo
+							
+							<div class="header-logo me-5 me-md-10 flex-grow-1 flex-lg-grow-0" >
+								<!--begin::Logo-->
+								<a href="index.html">
+									<img alt="Logo" src="./images/bitcoin-btc-logo.svg" class="h-40px logo-default">
 								</a>
 							</div>
-							<!--end::Header Logo-->
+							
 							<!--begin::Wrapper-->
 							<div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
 								<!--begin::Navbar-->
@@ -715,10 +715,17 @@
 												</div>
 												<!--end::Tab content-->
 											</div>
-											<!--end::Menu-->
-											<!--end::Menu wrapper-->
+											
+
+											<button id="kt_explore_toggle" class="explore-toggle btn btn-sm bg-body btn-color-gray-700 btn-active-primary shadow-sm position-fixed px-8 fw-bolder zindex-2 top-50 mt-10 end-0 transform-90 fs-5 rounded-top-0" title="Upgrade to Ceres HTML Pro" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">
+												<span id="kt_explore_toggle_label">Upgrade to Pro</span>
+											</button>
 										</div>
 										
+										<div class="btn btn-icon btn-custom btn-active-color-primary position-relative w-30px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+											<i id="kt_explore_toggle_label" class="bi bi-gear"></i>
+											
+										</div>
 
 										<div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
 											<!--begin::Menu wrapper-->
@@ -869,23 +876,9 @@
                                                         </div>
             
                                                         <div class="col-sm-8">
-                                                            <div class="">
-            
-                                                                <div class="row" style="text-align:center">
-                                                                    <div class="col-6">
-                                                                        <p class="fw-medium mb-2">My Balance :</p>
-                                                                        <h4 class="text-success fw-boldest">$ 6134.39</h4>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <p class="fw-medium mb-2">Revenue </p>
-                                                                        <h4 class="text-warning fw-boldest">$ 1000.00</h4>
-                                                                      
-                                                                    </div>
-                                                                </div>
-                                                                <div class="mt-3" style="float: right;">
-                                                                    <a href="#" class="btn btn-info   btn-sm">View Profile <i class="bi bi-arrow-right p-1"></i></a>
-                                                                </div>
-                                                            </div>
+															<div class="mt-20" style="float: right;">
+																<a href="#" class="btn btn-info   btn-sm">View Profile <i class="bi bi-arrow-right p-1"></i></a>
+															</div>
                                                         </div>
                                                     </div>
                                                 
@@ -997,7 +990,7 @@
 													<div class="row">
 														<div class="col">
 															<span class="h6 font-semibold text-muted text-sm d-block mb-2">
-                                                                <i class="bi bi-currency-bitcoin"></i>
+                                                                <img src="./images/bitcoin-btc-logo.svg" class="h-20px img-responsive">
                                                                 Bitcoin
                                                             </span>
 															<span class="h3 font-bold mb-0">$750.90</span>
@@ -1026,8 +1019,8 @@
 													<div class="row">
 														<div class="col">
 															<span class="h6 font-semibold text-muted text-sm d-block mb-2">
-                                                                <i class="bi bi-currency-bitcoin"></i>
-                                                                Altcoin
+																<img src="./images/shiba-inu-shib-logo.svg" class="h-20px img-responsive">
+                                                                Siba
                                                             </span>
 															<span class="h3 font-bold mb-0">$250.90</span>
 														</div>
@@ -1055,7 +1048,7 @@
 													<div class="row">
 														<div class="col">
 															<span class="h6 font-semibold text-muted text-sm d-block mb-2">
-                                                                <i class="bi bi-currency-bitcoin"></i>
+                                                                <img src="./images/ethereum-eth-logo.svg" class="h-20px img-responsive">
                                                                 Ethereum
                                                             </span>
 															<span class="h3 font-bold mb-0">$550.90</span>
@@ -1084,7 +1077,7 @@
 													<div class="row">
 														<div class="col">
 															<span class="h6 font-semibold text-muted text-sm d-block mb-2">
-                                                                <i class="bi bi-currency-bitcoin"></i>
+                                                                <img src="./images/dogecoin-doge-logo.svg" class="h-20px img-responsive">
                                                                 Dogecoin
                                                             </span>
 															<span class="h3 font-bold mb-0">$150.90</span>
@@ -1227,7 +1220,7 @@
                                                     <div class="card-toolbar">
                                                         <!--begin::Icon-->
                                                         <a class="btn btn-sm btn-icon btn-circle btn-icon-success btn-active-light-success" href="#" data-bs-toggle="modal" data-bs-target="#kt_modal_users_search">
-                                                            <span data-bs-toggle="tooltip" data-bs-trigger="hover" title="" data-bs-original-title="Add New User">
+                                                            <span data-bs-toggle="tooltip" data-bs-trigger="hover" title="" data-bs-original-title="Add New Transaction">
                                                                 <!--begin::Svg Icon | path: icons/duotone/Interface/Plus-Square.svg-->
                                                                 <span class="svg-icon svg-icon-2">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1390,9 +1383,9 @@
                                                             </div>
                                                             <!--end::Header-->
                                                             <!--begin::Body-->
-                                                            <div class="card-body py-0">
+                                                            <div class="card-body py-0 ">
                                                                 <!--begin::Table-->
-                                                                <div class="table-responsive">
+                                                                <div class="table-responsive mb-10">
                                                                     <table class="table align-middle table-row-bordered table-row-dashed gy-5" id="kt_table_widget_1">
                                                                         <!--begin::Table body-->
                                                                         <tbody>
@@ -1403,9 +1396,12 @@
                                                                                         <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_table_widget_1 .form-check-input" value="1">
                                                                                     </div>
                                                                                 </th>
-                                                                                <th class="min-w-200px px-0">Authors</th>
-                                                                                <th class="min-w-125px">Company</th>
-                                                                                <th class="min-w-125px">Progress</th>
+                                                                                <th class="min-w-200px">Users</th>
+                                                                                <th class="min-w-125px">Date</th>
+                                                                                <th class="min-w-125px">Coins</th>
+                                                                                <th class="min-w-125px">Value</th>
+                                                                                <th class="min-w-125px">Type</th>
+                                                                                <th class="min-w-100px">Profit</th>
                                                                                 <th class="text-end pe-2 min-w-70px">Action</th>
                                                                             </tr>
                                                                             <!--end::Table row-->
@@ -1424,29 +1420,177 @@
                                                                                         <!--begin::Logo-->
                                                                                         <div class="symbol symbol-circle symbol-50px me-2">
                                                                                             <span class="symbol-label">
-                                                                                                <img alt="" class="w-25px" src="assets/media/svg/brand-logos/aven.svg">
+                                                                                                <span class="symbol-label bg-light-primary text-primary fw-boldest">J</span>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <!--end::Logo-->
+                                                                                        <div class="ps-3">
+                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Jack Daniel</a>
+                                                                                            
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>03 june, 2020</td>
+                                                                                <td>
+                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">ALT</span>
+                                                                                   
+                                                                                </td>
+                                                                                <td>$ 7525.47</td>
+                                                                                <td class="text-success">Sell</td>
+                                                                                
+                                                                                
+                                                                                <td>
+                                                                                    <div class="d-flex flex-column w-100 me-2 mt-2">
+                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">10%</span>
+                                                                                        <div class="progress bg-light-success w-100 h-5px">
+                                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <!--end::Company=-->
+                                                                                <!--begin::Action=-->
+                                                                                <td class="pe-0 text-end">
+                                                                                    <a href="#" class="btn btn-light text-muted fw-boldest btn-sm px-5">View</a>
+                                                                                </td>
+                                                                                <!--end::Action=-->
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <!--begin::Checkbox-->
+                                                                                <td class="p-0">
+                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                        <input class="form-check-input" type="checkbox" value="1">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <!--end::Checkbox-->
+                                                                                <!--begin::Author=-->
+                                                                                <td class="p-0">
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <!--begin::Logo-->
+                                                                                        <div class="symbol symbol-circle symbol-50px me-2">
+                                                                                            <span class="symbol-label">
+                                                                                                <span class="symbol-label badge-light-success text-success fw-boldest">A</span>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <!--end::Logo-->
+                                                                                        <div class="ps-3">
+                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Smith</a>
+                                                                                            
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>18 Apr, 2020</td>
+                                                                                <td>
+                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">BTC</span>
+                                                                                   
+                                                                                </td>
+                                                                                <td>$ 2225.47</td>
+                                                                                <td class="text-warning">Buy</td>
+                                                                                
+                                                                               
+                                                                                
+                                                                                <td>
+                                                                                    <div class="d-flex flex-column w-100 me-2 mt-2">
+                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">10%</span>
+                                                                                        <div class="progress bg-light-warningw-100 h-5px">
+                                                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <!--end::Company=-->
+                                                                                <!--begin::Action=-->
+                                                                                <td class="pe-0 text-end">
+                                                                                    <a href="#" class="btn btn-light text-muted fw-boldest btn-sm px-5">View</a>
+                                                                                </td>
+                                                                                <!--end::Action=-->
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <!--begin::Checkbox-->
+                                                                                <td class="p-0">
+                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                        <input class="form-check-input" type="checkbox" value="1">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <!--end::Checkbox-->
+                                                                                <!--begin::Author=-->
+                                                                                <td class="p-0">
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <!--begin::Logo-->
+                                                                                        <div class="symbol symbol-circle symbol-50px me-2">
+                                                                                            <span class="symbol-label">
+                                                                                                <span class="symbol-label bg-light-primary text-primary fw-boldest">J</span>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <!--end::Logo-->
+                                                                                        <div class="ps-3">
+                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Jack Daniel</a>
+                                                                                            
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td>12 Mar, 2020</td>
+                                                                                <td>
+                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">ETH</span>
+                                                                                   
+                                                                                </td>
+                                                                                <td>$ 17525.47</td>
+                                                                                <td class="text-success">Sell</td>
+                                                                                
+                                                                               
+                                                                                
+                                                                                <td>
+                                                                                    <div class="d-flex flex-column w-100 me-2 mt-2">
+                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">10%</span>
+                                                                                        <div class="progress bg-light-success w-100 h-5px">
+                                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <!--end::Company=-->
+                                                                                <!--begin::Action=-->
+                                                                                <td class="pe-0 text-end">
+                                                                                    <a href="#" class="btn btn-light text-muted fw-boldest btn-sm px-5">View</a>
+                                                                                </td>
+                                                                                <!--end::Action=-->
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <!--begin::Checkbox-->
+                                                                                <td class="p-0">
+                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                        <input class="form-check-input" type="checkbox" value="1">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <!--end::Checkbox-->
+                                                                                <!--begin::Author=-->
+                                                                                <td class="p-0">
+                                                                                    <div class="d-flex align-items-center">
+                                                                                        <!--begin::Logo-->
+                                                                                        <div class="symbol symbol-circle symbol-50px me-2">
+                                                                                            <span class="symbol-label">
+                                                                                                <span class="symbol-label bg-light-info text-info fw-boldest">B</span>
                                                                                             </span>
                                                                                         </div>
                                                                                         <!--end::Logo-->
                                                                                         <div class="ps-3">
                                                                                             <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Brad Simmons</a>
-                                                                                            <span class="text-gray-400 fw-bold d-block">HTML, JS, ReactJS</span>
+                                                                                            
                                                                                         </div>
                                                                                     </div>
                                                                                 </td>
-                                                                                <!--end::Author=-->
-                                                                                <!--begin::Company=-->
+                                                                                <td>12 Mar, 2020</td>
                                                                                 <td>
-                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">Intertico</span>
-                                                                                    <span class="text-gray-400 fw-bold">Web, UI/UX Design</span>
+                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">BTC</span>
+                                                                                   
                                                                                 </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Progress=-->
+                                                                               
+                                                                                
+                                                                                <td>$ 6525.47</td>
+                                                                                <td class="text-warning">Buy</td>
+                                                                                
                                                                                 <td>
                                                                                     <div class="d-flex flex-column w-100 me-2 mt-2">
-                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">65%</span>
-                                                                                        <div class="progress bg-light-danger w-100 h-5px">
-                                                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"></div>
+                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">10%</span>
+                                                                                        <div class="progress bg-light-warningw-100 h-5px">
+                                                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%"></div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </td>
@@ -1457,8 +1601,6 @@
                                                                                 </td>
                                                                                 <!--end::Action=-->
                                                                             </tr>
-                                                                            <!--end::Table row-->
-                                                                            <!--begin::Table row-->
                                                                             <tr>
                                                                                 <!--begin::Checkbox-->
                                                                                 <td class="p-0">
@@ -1473,29 +1615,31 @@
                                                                                         <!--begin::Logo-->
                                                                                         <div class="symbol symbol-circle symbol-50px me-2">
                                                                                             <span class="symbol-label">
-                                                                                                <img alt="" class="w-25px" src="assets/media/svg/brand-logos/leaf.svg">
+                                                                                                <span class="symbol-label bg-light-primary text-primary fw-boldest">J</span>
                                                                                             </span>
                                                                                         </div>
                                                                                         <!--end::Logo-->
                                                                                         <div class="ps-3">
-                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Jessie Clarcson</a>
-                                                                                            <span class="text-gray-400 fw-bold d-block">C#, ASP.NET, MS SQL</span>
+                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Jack Daniel</a>
+                                                                                            
                                                                                         </div>
                                                                                     </div>
                                                                                 </td>
-                                                                                <!--end::Author=-->
-                                                                                <!--begin::Company=-->
+                                                                                <td>05 Mar, 2020</td>
                                                                                 <td>
-                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">Agoda</span>
-                                                                                    <span class="text-gray-400 fw-bold">Houses &amp; Hotels</span>
+                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">DOGE</span>
+                                                                                   
                                                                                 </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Progress=-->
+                                                                                
+                                                                                <td>$ 25.47</td>
+                                                                                <td class="text-info">Failed</td>
+                                                                               
+                                                                                
                                                                                 <td>
                                                                                     <div class="d-flex flex-column w-100 me-2 mt-2">
-                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">85%</span>
-                                                                                        <div class="progress bg-light-danger w-100 h-5px">
-                                                                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">10%</span>
+                                                                                        <div class="progress bg-light-success w-100 h-5px">
+                                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%"></div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </td>
@@ -1506,161 +1650,24 @@
                                                                                 </td>
                                                                                 <!--end::Action=-->
                                                                             </tr>
-                                                                            <!--end::Table row-->
-                                                                            <!--begin::Table row-->
-                                                                            <tr>
-                                                                                <!--begin::Checkbox-->
-                                                                                <td class="p-0">
-                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                        <input class="form-check-input" type="checkbox" value="1">
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Checkbox-->
-                                                                                <!--begin::Author=-->
-                                                                                <td class="p-0">
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <!--begin::Logo-->
-                                                                                        <div class="symbol symbol-circle symbol-50px me-2">
-                                                                                            <span class="symbol-label">
-                                                                                                <img alt="" class="w-25px" src="assets/media/svg/brand-logos/atica.svg">
-                                                                                            </span>
-                                                                                        </div>
-                                                                                        <!--end::Logo-->
-                                                                                        <div class="ps-3">
-                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Lebron Wayde</a>
-                                                                                            <span class="text-gray-400 fw-bold d-block">PHP, Laravel, VueJS</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Author=-->
-                                                                                <!--begin::Company=-->
-                                                                                <td>
-                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">RoadGee</span>
-                                                                                    <span class="text-gray-400 fw-bold">Transportation</span>
-                                                                                </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Progress=-->
-                                                                                <td>
-                                                                                    <div class="d-flex flex-column w-100 me-2 mt-2">
-                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">40%</span>
-                                                                                        <div class="progress bg-light-danger w-100 h-5px">
-                                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Action=-->
-                                                                                <td class="pe-0 text-end">
-                                                                                    <a href="#" class="btn btn-light text-muted fw-boldest btn-sm px-5">View</a>
-                                                                                </td>
-                                                                                <!--end::Action=-->
-                                                                            </tr>
-                                                                            <!--end::Table row-->
-                                                                            <!--begin::Table row-->
-                                                                            <tr>
-                                                                                <!--begin::Checkbox-->
-                                                                                <td class="p-0">
-                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                        <input class="form-check-input" type="checkbox" value="1">
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Checkbox-->
-                                                                                <!--begin::Author=-->
-                                                                                <td class="p-0">
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <!--begin::Logo-->
-                                                                                        <div class="symbol symbol-circle symbol-50px me-2">
-                                                                                            <span class="symbol-label">
-                                                                                                <img alt="" class="w-25px" src="assets/media/svg/brand-logos/volicity-9.svg">
-                                                                                            </span>
-                                                                                        </div>
-                                                                                        <!--end::Logo-->
-                                                                                        <div class="ps-3">
-                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Natali Trump</a>
-                                                                                            <span class="text-gray-400 fw-bold d-block">Python, ReactJS</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Author=-->
-                                                                                <!--begin::Company=-->
-                                                                                <td>
-                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">The Hill</span>
-                                                                                    <span class="text-gray-400 fw-bold">Insurance</span>
-                                                                                </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Progress=-->
-                                                                                <td>
-                                                                                    <div class="d-flex flex-column w-100 me-2 mt-2">
-                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">71%</span>
-                                                                                        <div class="progress bg-light-danger w-100 h-5px">
-                                                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 71%"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Action=-->
-                                                                                <td class="pe-0 text-end">
-                                                                                    <a href="#" class="btn btn-light text-muted fw-boldest btn-sm px-5">View</a>
-                                                                                </td>
-                                                                                <!--end::Action=-->
-                                                                            </tr>
-                                                                            <!--end::Table row-->
-                                                                            <!--begin::Table row-->
-                                                                            <tr>
-                                                                                <!--begin::Checkbox-->
-                                                                                <td class="p-0">
-                                                                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                                                        <input class="form-check-input" type="checkbox" value="1">
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Checkbox-->
-                                                                                <!--begin::Author=-->
-                                                                                <td class="p-0">
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <!--begin::Logo-->
-                                                                                        <div class="symbol symbol-circle symbol-50px me-2">
-                                                                                            <span class="symbol-label">
-                                                                                                <img alt="" class="w-25px" src="assets/media/svg/brand-logos/aven.svg">
-                                                                                            </span>
-                                                                                        </div>
-                                                                                        <!--end::Logo-->
-                                                                                        <div class="ps-3">
-                                                                                            <a href="#" class="text-gray-800 fw-boldest fs-5 text-hover-primary mb-1">Brad Simmons</a>
-                                                                                            <span class="text-gray-400 fw-bold d-block">HTML, JS, ReactJS</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Author=-->
-                                                                                <!--begin::Company=-->
-                                                                                <td>
-                                                                                    <span class="text-gray-800 fw-boldest fs-5 d-block">Intertico</span>
-                                                                                    <span class="text-gray-400 fw-bold">Web, UI/UX Design</span>
-                                                                                </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Progress=-->
-                                                                                <td>
-                                                                                    <div class="d-flex flex-column w-100 me-2 mt-2">
-                                                                                        <span class="text-gray-400 me-2 fw-boldest mb-2">65%</span>
-                                                                                        <div class="progress bg-light-danger w-100 h-5px">
-                                                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <!--end::Company=-->
-                                                                                <!--begin::Action=-->
-                                                                                <td class="pe-0 text-end">
-                                                                                    <a href="#" class="btn btn-light text-muted fw-boldest btn-sm px-5">View</a>
-                                                                                </td>
-                                                                                <!--end::Action=-->
-                                                                            </tr>
-                                                                            <!--end::Table row-->
+                                                                            
                                                                         </tbody>
                                                                         <!--end::Table body-->
                                                                     </table>
                                                                 </div>
-                                                                <!--end::Table-->
+                                                                <ul class="pagination mb-10 mt-10">
+                                                                    <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a></li>
+                                                                    <li class="page-item "><a href="#" class="page-link">1</a></li>
+                                                                    <li class="page-item active"><a href="#" class="page-link">2</a></li>
+                                                                    <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                                                    <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                                                    <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                                                    <li class="page-item "><a href="#" class="page-link">6</a></li>
+                                                                    <li class="page-item next"><a href="#"  class="page-link"><i class="next"></i></a></li>
+                                                                </ul>
                                                             </div>
-                                                            <!--end::Body-->
+                                                            
+                                                          
                                                         </div>
                                                         <!--end::Table Widget 1-->
                                                     </div>
@@ -2598,15 +2605,306 @@
 						</div>
 						<!--end::Container-->
 					</div>
-					<!--end::Footer-->
+				
+		<div id="kt_explore" class="explore bg-white" data-kt-drawer="true" data-kt-drawer-name="explore" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '440px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_explore_toggle" data-kt-drawer-close="#kt_explore_close">
+			<!--begin::Card-->
+			<div class="card shadow-none rounded-0 w-100">
+				<!--begin::Header-->
+				<div class="card-header" id="kt_explore_header">
+					<h5 class="card-title fw-bold text-gray-600">Upgrade To Pro</h5>
+					<div class="card-toolbar">
+						<button type="button" class="btn btn-sm btn-icon explore-btn-dismiss me-n5" id="kt_explore_close">
+							<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+							<span class="svg-icon svg-icon-2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+								</svg>
+							</span>
+							<!--end::Svg Icon-->
+						</button>
+					</div>
+				</div>
+				<!--end::Header-->
+				<!--begin::Body-->
+				<div class="card-body" id="kt_explore_body">
+					<!--begin::Content-->
+					<div id="kt_explore_scroll" class="scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_explore_body" data-kt-scroll-dependencies="#kt_explore_header, #kt_explore_footer" data-kt-scroll-offset="5px">
+						<!--begin::Licenses-->
+						<div class="mb-5">
+							<!--begin::Comparision-->
+							<table class="table table-row-dashed table-row-gray-300 align-middle fs-6 fw-bold text-gray-800 gs-0 gy-3">
+								<tr class="border-bottom-0">
+									<th class="fw-bolder text-dark fs-3">Pro Version Benefits</th>
+									<th class="text-center">
+										<span class="bg-light py-2 px-4 fw-bold fs-6 rounded">Free</span>
+									</th>
+									<th class="text-center">
+										<span class="bg-light py-2 px-4 fw-bold fs-6 rounded">Pro</span>
+									</th>
+								</tr>
+								<tr>
+									<td>UI Elements</td>
+									<td class="text-center">20</td>
+									<td class="text-center">100</td>
+								</tr>
+								<tr>
+									<td>In-house Components</td>
+									<td class="text-center">20</td>
+									<td class="text-center">40</td>
+								</tr>
+								<tr>
+									<td>Crafted Pages</td>
+									<td class="text-center">5</td>
+									<td class="text-center">20</td>
+								</tr>
+								<tr>
+									<td>Complete Documentation</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>Product Support</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>Layout Builder</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>Source Vectors</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>Email Templates</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>User Management App</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>Calendar App</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>Chat App</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+								<tr>
+									<td>Customers App</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-danger">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="black" />
+												<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+									<td class="text-center">
+										<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
+										<span class="svg-icon svg-icon-2 explore-icon-success">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+												<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="black" />
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</td>
+								</tr>
+							</table>
+							<!--end::Comparision-->
+						</div>
+						<!--end::Licenses-->
+						<!--begin::Link-->
+						<a href="https://keenthemes.com/products/ceres-html-pro" class="btn btn-lg explore-btn-primary w-100">Upgrade to
+						<span class="fw-bolder ms-1">Ceres HTML Pro</span></a>
+						<!--end::Link-->
+					</div>
+					<!--end::Content-->
+				</div>
+				<!--end::Body-->
+				<!--begin::Footer-->
+				<div class="card-footer py-5 text-center" id="kt_explore_footer">
+					<a href="https://keenthemes.com/products/ceres-html-free" class="btn btn-lg explore-btn-secondary w-100">Download
+					<span class="fw-bolder ms-1">Ceres HTML Free</span></a>
+				</div>
+				<!--end::Footer-->
+			</div>
+			<!--end::Card-->
+		</div>
+		<!--end::Exolore drawer-->
+		<!--end::Drawers-->
+		<!--begin::Modals-->
+		<!--begin::Modal - Invite Friends-->
 				</div>
 				<!--end::Wrapper-->
 			</div>
 			<!--end::Page-->
 		</div>
-		<!--end::Root-->
-		<!--begin::Drawers-->
-		<!--begin::Activities drawer-->
+		
+        
 		<div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '900px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
 			<div class="card shadow-none rounded-0">
 				<!--begin::Header-->
